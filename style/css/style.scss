@@ -1,0 +1,110 @@
+
+/* DEFINE */
+$darker-green: #94A684;
+$lighter-green: #AEC3AE;
+$black-color: rgb(39, 36, 36);
+
+@import 'responsive';
+
+body{
+  background-color: $darker-green !important;
+}
+
+.container{
+  // max-width: 50%;
+  // max-height: 100%;
+  margin: 5rem auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.fragrance-img{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.fragrance-details{
+  font-size: small;
+  opacity: .8;
+}
+
+.fragrance-info{
+  font-size: smaller;
+}
+
+.fragrance-price{
+  opacity: .9;
+  color: $darker-green;
+}
+
+.rating-num{
+  font-size: x-small;
+  opacity: .7;
+}
+
+.fa-solid{
+  // color: rgb(200, 200, 29);
+  color: $darker-green;
+}
+
+.fa-regular{
+  color: $black-color;
+}
+
+.wishlist{
+  font-size: small;
+}
+
+.fa-heart{
+  font-size: large;
+  color: $black-color;
+  cursor: pointer;
+  transition: 2ms ease-in-out;
+}
+
+.fa-heart:hover{
+  opacity: .7;
+}
+
+.tags{
+  font-size: smaller;
+  background-color: $lighter-green;
+  border: 1px solid $lighter-green;
+  color: $black-color;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.tags:hover{
+  background-color: white;
+  border: 1px solid $lighter-green;
+  color: $lighter-green;
+}
+
+.quantity{
+  // border: 1px solid green;
+  font-size: larger;
+}
+
+.fa-circle-minus, .fa-circle-plus{
+  cursor: pointer;
+}
+
+.fragrance-btn{
+  background-color: $lighter-green !important;
+  border: 1px solid $lighter-green !important;
+  color: $black-color !important;
+}
+
+.fragrance-btn:hover{
+  background-color: white !important;
+  color: $lighter-green !important;
+}
+
+
+.copyright{
+  font-size: smaller;
+  opacity: .7;
+}
