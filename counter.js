@@ -11,15 +11,19 @@ function itemQuantity(){
   const counter = document.getElementById('counter');
   // console.log(counter);
 
-  const totalPrice = document.querySelector('.fragrance-price'); /* price changes as counter increments */
+  const totalPrice = document.getElementById('price'); /* price changes as counter increments */
   // console.log(totalPrice);
 
   plusBtn.addEventListener('click', event => {
     let counterUp = parseInt(counter.textContent);
     // console.log(event);
 
+    let priceUp = parseFloat(totalPrice.textContent);
+    // console.log(priceUp);
+
     if(counterUp < 6){
       counterUp += 1;
+      priceUp += 99.00;
     }
 
     if(counterUp >= 6){
@@ -29,6 +33,7 @@ function itemQuantity(){
     }
 
     counter.textContent = counterUp;
+    totalPrice.textContent = priceUp.toFixed(2);
 
   });
 
@@ -36,8 +41,11 @@ function itemQuantity(){
     // console.log(event);
     let counterDown = parseInt(counter.textContent);
 
+    let priceDown = parseFloat(totalPrice.textContent);
+
     if(counterDown > 1){
       counterDown -= 1;
+      priceDown -= 99.00;
     }
 
     if(counterDown <= 1){
@@ -47,6 +55,7 @@ function itemQuantity(){
     }
 
     counter.textContent = counterDown;
+    totalPrice.textContent = priceDown.toFixed(2);
   })
 
 }

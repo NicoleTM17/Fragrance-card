@@ -1,4 +1,19 @@
 /* DEFINE */
+@media (max-width: 992px) {
+  h1 {
+    font-size: x-large !important;
+  }
+  .text-content {
+    font-size: smaller !important;
+  }
+  .tags {
+    font-size: x-small !important;
+    padding: 0 !important;
+  }
+  .quantity {
+    font-size: small !important;
+  }
+}
 @media (max-width: 767px) {
   .container {
     width: 75% !important;
@@ -9,17 +24,30 @@
     border-bottom-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
   }
+  .tags {
+    font-size: x-small !important;
+  }
 }
 body {
   background-color: #94A684 !important;
 }
 
 .container {
+  height: 100%;
   margin: 5rem auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
 .fragrance-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -27,20 +55,24 @@ body {
 .fragrance-details {
   font-size: small;
   opacity: 0.8;
+  font-family: "Poppins", sans-serif;
 }
 
 .fragrance-info {
   font-size: smaller;
+  font-family: "PT Serif", serif;
 }
 
 .fragrance-price {
   opacity: 0.9;
   color: #94A684;
+  font-family: "Poppins", sans-serif;
 }
 
 .rating-num {
   font-size: x-small;
   opacity: 0.7;
+  font-family: "Poppins", sans-serif;
 }
 
 .fa-solid {
@@ -53,6 +85,7 @@ body {
 
 .wishlist {
   font-size: small;
+  font-family: "Poppins", sans-serif;
 }
 
 .fa-heart {
@@ -68,6 +101,8 @@ body {
 
 .tags {
   font-size: smaller;
+  font-family: "Poppins", sans-serif;
+  margin: 0.2rem;
   background-color: #AEC3AE;
   border: 1px solid #AEC3AE;
   color: rgb(39, 36, 36);
@@ -86,6 +121,7 @@ body {
 
 .quantity {
   font-size: larger;
+  font-family: "Poppins", sans-serif;
 }
 
 .fa-circle-minus, .fa-circle-plus {
@@ -93,17 +129,19 @@ body {
 }
 
 .fragrance-btn {
-  background-color: #AEC3AE !important;
-  border: 1px solid #AEC3AE !important;
-  color: rgb(39, 36, 36) !important;
+  font-family: "Poppins", sans-serif;
+  background-color: #AEC3AE;
+  border: 1px solid #AEC3AE;
+  color: rgb(39, 36, 36);
 }
 
 .fragrance-btn:hover {
-  background-color: white !important;
-  color: #AEC3AE !important;
+  background-color: white;
+  color: #AEC3AE;
 }
 
 .copyright {
   font-size: smaller;
+  font-family: "Poppins", sans-serif;
   opacity: 0.7;
 }/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,9 @@
 $darker-green: #94A684;
 $lighter-green: #AEC3AE;
 $black-color: rgb(39, 36, 36);
+$poppins: 'Poppins', sans-serif;
+$PT: 'PT Serif', serif;
+$slab: 'Roboto Slab', serif;
 
 @import 'responsive';
 
@@ -11,13 +14,20 @@ body{
 }
 
 .container{
-  // max-width: 50%;
-  // max-height: 100%;
+  height: 100%;
   margin: 5rem auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
+h1{
+  font-family: $slab;
+  font-weight: 500;
+}
+
 .fragrance-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -25,24 +35,27 @@ body{
 .fragrance-details{
   font-size: small;
   opacity: .8;
+  font-family: $poppins;
 }
 
 .fragrance-info{
   font-size: smaller;
+  font-family: $PT;
 }
 
 .fragrance-price{
   opacity: .9;
   color: $darker-green;
+  font-family: $poppins;
 }
 
 .rating-num{
   font-size: x-small;
   opacity: .7;
+  font-family: $poppins;
 }
 
 .fa-solid{
-  // color: rgb(200, 200, 29);
   color: $darker-green;
 }
 
@@ -52,6 +65,7 @@ body{
 
 .wishlist{
   font-size: small;
+  font-family: $poppins;
 }
 
 .fa-heart{
@@ -67,6 +81,8 @@ body{
 
 .tags{
   font-size: smaller;
+  font-family: $poppins;
+  margin: .2rem;
   background-color: $lighter-green;
   border: 1px solid $lighter-green;
   color: $black-color;
@@ -84,8 +100,8 @@ body{
 }
 
 .quantity{
-  // border: 1px solid green;
   font-size: larger;
+  font-family: $poppins;
 }
 
 .fa-circle-minus, .fa-circle-plus{
@@ -93,18 +109,20 @@ body{
 }
 
 .fragrance-btn{
-  background-color: $lighter-green !important;
-  border: 1px solid $lighter-green !important;
-  color: $black-color !important;
+  font-family: $poppins;
+  background-color: $lighter-green;
+  border: 1px solid $lighter-green;
+  color: $black-color;
 }
 
 .fragrance-btn:hover{
-  background-color: white !important;
-  color: $lighter-green !important;
+  background-color: white;
+  color: $lighter-green;
 }
 
 
 .copyright{
   font-size: smaller;
+  font-family: $poppins;
   opacity: .7;
 }
